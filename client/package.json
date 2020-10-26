@@ -1,0 +1,43 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "private": true,
+  "proxy": "http://localhost:3000",
+  "description": "",
+  "main": "/server/uiServer.js",
+  "scripts": {
+    "start": "nodemon -w server/uiServer.js -w .env server/uiServer.js",
+    "compile": "webpack --mode production",
+    "watch": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.14.0",
+    "react-bootstrap": "^0.32.4",
+    "react-dom": "^16.14.0",
+    "react-router-bootstrap": "^0.24.4",
+    "react-router-dom": "^4.3.1",
+    "react-select": "^2.2.0",
+    "whatwg-fetch": "^3.4.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.21.5",
+    "nodemon": "^2.0.6",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}
